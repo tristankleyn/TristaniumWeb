@@ -1,0 +1,20 @@
+{
+  "index.qmd": {
+    "index.html": "8b718e6d"
+  },
+  "about.qmd": {
+    "about.html": "486c0781"
+  },
+  "moving_things.qmd": {
+    "moving_things.html": "baa27c66"
+  },
+  "mr_whiff.qmd": {
+    "mr_whiff.html": "31c42947"
+  },
+  "spectra.qmd": {
+    "spectra.html": "bf046a2a"
+  },
+  "daily_trajectory.qmd": {
+    "daily_trajectory.html": "bf981023"
+  }
+}

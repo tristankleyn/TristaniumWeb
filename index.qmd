@@ -1,0 +1,15 @@
+---
+title: "Tristanium"
+---
+
+Welcome to Tristanium—a digital logbook dedicated to low-budget, open-source science projects based out of the San Juan Islands.
+
+I use this space to document experimental builds, sensory data, and field observations using accessible hardware and creative signal processing.
+
+### Current Explorations
+
+-   **San Juan Spectra:** Low-budget spectroscopy of coastal waters.
+-   **Mr. Whiff:** Smelling the islands one whiff at a time.
+-   **The Daily Trajectory:** A newsletter in motion.
+
+## Explore the project pages in the menu above to see code, schematics, and field notes.

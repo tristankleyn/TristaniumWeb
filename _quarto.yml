@@ -1,0 +1,24 @@
+project:
+  type: website
+
+website:
+  title: "Tristanium"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - text: "Projects"
+        menu:
+          - href: spectra.qmd
+            text: "San Juan Spectra"
+          - href: mr_whiff.qmd
+            text: "Mr. Whiff"
+          - href: daily_trajectory.qmd
+            text: "The Daily Trajectory"
+
+format:
+  html:
+    theme: cosmo
+    toc: true
