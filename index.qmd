@@ -2,7 +2,7 @@
 ---
 ---
 
-Welcome to [**Tristanium**]{style="color: darkgreen;"} —a logbook dedicated to low-budget, open-source science projects based out of the San Juan Islands. I use this space to document experimental builds, sensory data, and field observations using accessible hardware and creative signal processing.
+Welcome to [**Tristanium**]{style="color: darkgreen;"} —a journal for low-budget, open-source science in the San Juan Islands. I use this space to document home-cooked experiments, ideas, and observations with accessible hardware and creative signal processing.
 
 ### Present Ponderings
 
@@ -10,4 +10,4 @@ Welcome to [**Tristanium**]{style="color: darkgreen;"} —a logbook dedicated to
 
 **Mr. Whiff \|** Smelling the islands one whiff at a time.
 
-**The Daily Trajectory \|** A newsletter in motion.
+**The Daily Trajectory \|** Some thoughts in motion.
