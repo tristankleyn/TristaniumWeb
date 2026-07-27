@@ -4,6 +4,54 @@
 
 Welcome to [**Tristanium**]{style="color: darkgreen;"} —a journal for low-budget, open-source science in the San Juan Islands. I use this space to document home-cooked experiments, ideas, and observations with accessible hardware and creative signal processing.
 
+### Field Map
+
+Every trial, from every project, plotted where it happened. Hover a marker for the trial number and start time.
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" crossorigin=""/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js" crossorigin=""></script>
+
+<div id="trial-map" style="height: 420px; border-radius: 8px; overflow: hidden; border: 1px solid #ddd; margin: 1.25rem 0;"></div>
+
+<script>
+fetch('data/trials.json')
+  .then(r => r.json())
+  .then(trials => {
+    const map = L.map('trial-map', { scrollWheelZoom: false }).setView([48.55, -123.05], 10);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+      maxZoom: 19
+    }).addTo(map);
+
+    const bounds = [];
+    trials.forEach(t => {
+      const icon = L.divIcon({
+        className: 'trial-marker',
+        html: `<div style="background:${t.color}; width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:14px; box-shadow:0 1px 3px rgba(0,0,0,0.35); border:2px solid white;">${t.icon}</div>`,
+        iconSize: [28, 28],
+        iconAnchor: [14, 14]
+      });
+
+      const marker = L.marker([t.lat, t.lon], { icon }).addTo(map);
+
+      const time = t.start_time
+        ? new Date(t.start_time).toLocaleString(undefined, { dateStyle: 'medium', timeStyle: 'short' })
+        : 'unknown time';
+
+      marker.bindTooltip(
+        `<strong>${t.project_label}</strong><br>${t.trial} &middot; ${time}`,
+        { direction: 'top', offset: [0, -14] }
+      );
+
+      bounds.push([t.lat, t.lon]);
+    });
+
+    if (bounds.length) map.fitBounds(bounds, { padding: [40, 40], maxZoom: 13 });
+  })
+  .catch(err => console.error('Could not load trial map data:', err));
+</script>
+
 ### Present Ponderings
 
 **San Juan Spectra \|** Low-budget spectroscopy of coastal waters.

@@ -1,0 +1,32 @@
+[
+  {
+    "project": "mr_whiff",
+    "project_label": "Mr. Whiff",
+    "icon": "\ud83d\udc43",
+    "color": "#4c6b52",
+    "trial": "TRIAL1",
+    "lat": 48.54252016057,
+    "lon": -123.02130146208455,
+    "start_time": "2026-07-20T02:40:11Z"
+  },
+  {
+    "project": "mr_whiff",
+    "project_label": "Mr. Whiff",
+    "icon": "\ud83d\udc43",
+    "color": "#4c6b52",
+    "trial": "TRIAL2",
+    "lat": 48.54493002126601,
+    "lon": -123.01899614245042,
+    "start_time": "2026-07-24T02:54:56Z"
+  },
+  {
+    "project": "mr_whiff",
+    "project_label": "Mr. Whiff",
+    "icon": "\ud83d\udc43",
+    "color": "#4c6b52",
+    "trial": "TRIAL3",
+    "lat": 48.57100526657001,
+    "lon": -123.17018282791621,
+    "start_time": "2026-07-25T22:04:36Z"
+  }
+]
