@@ -17,7 +17,7 @@ Every trial, from every project, plotted where it happened. Hover a marker for t
 // Create the map and basemap right away, independent of the data fetch,
 // so a data-loading problem shows an empty (but visible) map rather than
 // a blank container.
-const trialMap = L.map('trial-map', { scrollWheelZoom: false }).setView([48.55, -123.05], 10);
+const trialMap = L.map('trial-map', { scrollWheelZoom: true }).setView([48.55, -123.05], 10);
 
 L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
@@ -42,8 +42,8 @@ fetch('data/trials.json')
       const marker = L.marker([t.lat, t.lon], { icon }).addTo(trialMap);
 
       const time = t.start_time
-        ? new Date(t.start_time).toLocaleString(undefined, { dateStyle: 'medium', timeStyle: 'short' })
-        : 'unknown time';
+        ? new Date(t.start_time).toLocaleDateString(undefined, { dateStyle: 'medium' })
+        : 'unknown date';
 
       marker.bindTooltip(
         `<strong>${t.project_label}</strong><br>${t.trial} &middot; ${time}`,

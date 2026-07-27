@@ -5,6 +5,7 @@ project:
 
 website:
   title: "Tristanium"
+  favicon: images/logo1.png
   navbar:
     left:
       - href: index.qmd
