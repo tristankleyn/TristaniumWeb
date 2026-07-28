@@ -4,7 +4,7 @@ title: "Mr. Whiff"
 
 ### About
 
-Mr. Whiff is my project for sniffing the air around different places – starting with where I live now: the San Juan Islands of Pacific Northwest America. It’s a setup you can make for around $100 with a Waveshare BME688 sensor as a digital nose, a Raspberry Pico W as a digital brain, a 3.7V battery for re-chargeable power, and an SD card for additional memory. 
+Mr. Whiff is my project for (digitally) having a sniff around – starting with where I live now: the San Juan Islands of Pacific Northwest America. It’s a setup you can make for around $100 with a Waveshare BME688 sensor as a digital nose, a Raspberry Pico W as a digital brain, a 3.7V battery for re-chargeable power, and an SD card for additional memory. 
 
 The challenge I faced, as goes for all low-budget science, was to turn the readings coming out from this setup into a consistent, meaningful environmental data to interpret and learn from. Given that none of my reporting is peer-reviewed, I aim to write document my methods and findings for Mr. Whiff to be as clear and reproducible as possible. 
 
