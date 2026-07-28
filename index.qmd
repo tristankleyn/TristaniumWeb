@@ -2,11 +2,17 @@
 ---
 ---
 
-Welcome to [**Tristanium**]{style="color: darkgreen;"} —a journal for low-budget, open-source science in the San Juan Islands. I use this space to document home-cooked experiments, ideas, and observations with accessible hardware and creative signal processing.
+Welcome to [**Tristanium**]{style="color: darkgreen;"} — my journal for low-budget, open-source science in the San Juan Islands. I use this space to log and write about home-cooked experiments, ideas, and observations.
+
+### Present Ponderings
+
+**San Juan Spectra \|** Low-budget spectroscopy of coastal waters.
+
+**Mr. Whiff \|** Smelling the islands one whiff at a time.
+
+**The Daily Trajectory \|** Some thoughts in motion.
 
 ### Field Map
-
-Every trial, from every project, plotted where it happened. Hover a marker for the trial number and start time.
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" crossorigin=""/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js" crossorigin=""></script>
@@ -57,11 +63,3 @@ fetch('data/trials.json')
   })
   .catch(err => console.error('Could not load trial map data:', err));
 </script>
-
-### Present Ponderings
-
-**San Juan Spectra \|** Low-budget spectroscopy of coastal waters.
-
-**Mr. Whiff \|** Smelling the islands one whiff at a time.
-
-**The Daily Trajectory \|** Some thoughts in motion.
