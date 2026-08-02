@@ -30,6 +30,26 @@
     "start_time": "2026-07-25T22:04:36Z"
   },
   {
+    "project": "mr_whiff",
+    "project_label": "Mr. Whiff",
+    "icon": "\ud83d\udc43",
+    "color": "#4c6b52",
+    "trial": "T004",
+    "lat": 48.536265226173334,
+    "lon": -123.01653627025611,
+    "start_time": "2026-07-27T20:28:05Z"
+  },
+  {
+    "project": "mr_whiff",
+    "project_label": "Mr. Whiff",
+    "icon": "\ud83d\udc43",
+    "color": "#4c6b52",
+    "trial": "T005",
+    "lat": 48.49026838206701,
+    "lon": -123.06577413886866,
+    "start_time": "2026-08-01T18:04:00Z"
+  },
+  {
     "project": "san_juan_spectra",
     "project_label": "San Juan Spectra",
     "icon": "\ud83d\udca1",
